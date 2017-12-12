@@ -1,3 +1,8 @@
+// This is an example contract where people can make 'investments' to a contract
+// Each investment has to be higher than the latest one to get accepted
+// Investors can attack a personal message which other people can read
+// Based on: Cryptobragging from Neel Rao @ https://cryptobragging.com/ 
+
 pragma solidity ^0.4.11;
 
 contract InvestCompetition {
