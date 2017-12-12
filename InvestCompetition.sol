@@ -35,17 +35,17 @@ contract InvestCompetition {
     }
 
     function displayMessage() public constant returns(string) {
-	      // Display message from latest investment
+	// Display message from latest investment
         return personalMessage;
     }
 
     function displaytotalBalance() public constant returns(uint) {
-	      // Displays the total balance of the contract
+	// Displays the total balance of the contract
         return this.balance;
     }
 
     function withdrawBalance() public {
-	      // Transfers the contractbalance to the owner of the contract
+	// Transfers the contractbalance to the owner of the contract
         require(msg.sender == owner);
         owner.transfer(this.balance);
     }
