@@ -1,5 +1,5 @@
 /* Based on the Cryptobragging contract @ cryptobragging.com,
-   which allows pariticpants to add new messages as long as
+   which allows participants to add new messages as long as
    their transaction value is higher than the most recent one */
 
 pragma solidity ^0.4.11;
