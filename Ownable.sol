@@ -20,6 +20,7 @@ contract Ownable {
     /* Event for a watcher to register a transfer of ownership */
     event ownershipTransfered(address indexed _oldOwner, address indexed _newOwner);
 
+    /* A simple function which can be used to send ETH to the contract */
     function payContract() public payable {
     }
 
@@ -35,7 +36,7 @@ contract Ownable {
         owner.transfer(this.balance);
     }
 
-    /* Transfer the ownership of the contract to a new account */
+    /* Transfer the ownership of the contract to a new address */
     function transferOwnership(address _newOwner) onlyOwner public {
         ownershipTransfered(owner, _newOwner);
         owner = _newOwner;
